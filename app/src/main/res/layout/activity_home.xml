@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="功能列表" />
+
+    <com.sheepyang.mobilesafe.view.HomeTextView
+        android:id="@+id/tv_home_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_home_title"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:textSize="18sp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="手机卫士，超强杀毒，超级神速！集齐所有功能可以召唤神龙！快开始用吧！"/>
+
+    <GridView
+        android:id="@+id/gv_home_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_home_hint"
+        android:numColumns="3"
+        android:verticalSpacing="20dp">
+
+    </GridView>
+
+</RelativeLayout>

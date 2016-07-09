@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:settingview="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="设置中心" />
+
+    <com.sheepyang.mobilesafe.view.SettingView
+        android:id="@+id/sv_setting_update"
+        android:layout_below="@id/tv_setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        settingview:settingTitle = "提示更新"
+        settingview:des_on = "打开提示更新"
+        settingview:des_off = "关闭提示更新">
+    </com.sheepyang.mobilesafe.view.SettingView>
+
+    <com.sheepyang.mobilesafe.view.SettingView
+        android:id="@+id/sv_setting_addressservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        settingview:settingTitle = "号码归属地显示"
+        settingview:des_on = "打开归属地显示"
+        settingview:des_off = "关闭归属地显示">
+    </com.sheepyang.mobilesafe.view.SettingView>
+
+    <com.sheepyang.mobilesafe.view.SettingView
+        android:id="@+id/sv_setting_blacknum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        settingview:settingTitle = "黑名单拦截"
+        settingview:des_on = "打开黑名单拦截"
+        settingview:des_off = "关闭黑名单拦截">
+    </com.sheepyang.mobilesafe.view.SettingView>
+
+    <com.sheepyang.mobilesafe.view.SettingClickView
+        android:id="@+id/scv_setting_toaststyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        settingview:settingClickTitle = "归属地提示框风格"
+        settingview:des = "半透明">
+    </com.sheepyang.mobilesafe.view.SettingClickView>
+
+    <com.sheepyang.mobilesafe.view.SettingClickView
+        android:id="@+id/scv_setting_toastlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        settingview:settingClickTitle = "归属地提示框位置"
+        settingview:des = "设置归属地提示框显示位置">
+    </com.sheepyang.mobilesafe.view.SettingClickView>
+
+</LinearLayout>

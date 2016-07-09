@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="com.sheepyang.mobilesafe.view.SettingView">
+        <attr name="settingTitle" format="string"></attr>
+        <attr name="checked" format="boolean"></attr>
+        <attr name="des_on" format="string"></attr>
+        <attr name="des_off" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="com.sheepyang.mobilesafe.view.SettingClickView">
+        <attr name="settingClickTitle" format="string"></attr>
+        <attr name="des" format="string"></attr>
+    </declare-styleable>
+</resources>
